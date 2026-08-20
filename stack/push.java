@@ -1,7 +1,5 @@
-
-
-public class push {
-
+package stack;
+public class push{
     int[] stack = new int[5];
     int top = -1;
 

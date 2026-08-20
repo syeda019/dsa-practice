@@ -1,6 +1,5 @@
-
-
-public class stackUSEingArray{
+package stack;
+public class StackUSEingArray{
     int[] stack = new int[5];
     int top = -1;
     public void push(int value){
@@ -44,7 +43,7 @@ public class stackUSEingArray{
         }
     }
     public static void main(String[] args){
-        stackUSEingArray s = new stackUSEingArray();
+        StackUSEingArray s = new StackUSEingArray();
         s.push(10);
         s.push(20);
         s.push(30);

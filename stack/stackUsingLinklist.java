@@ -1,4 +1,4 @@
-
+package stack;
  public class stackUsingLinklist{
     class Node {
         int data;
