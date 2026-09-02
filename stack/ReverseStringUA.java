@@ -1,7 +1,7 @@
 package stack;
 // using array
-public class reverseString {
-    char[] stack = new char[5];
+public class ReverseStringUA {
+    char[] stack = new char[100];
     int top = -1;
 
     public void push(char value){
@@ -13,14 +13,26 @@ public class reverseString {
         stack[top] = value;
     }
 
-    public void pop(){
+    public char pop(){
         if(top == -1){
-            System.out.println();
-            return;
+            System.out.println("stack is empty");
+            return '\0';
         }
-        System.out.println(stack[top] + "popped");
+        char value = stack[top];
         top--;
+        return value;
     }  
+    public String Reverse(String str){
+        for(char i = 0; i < str.length(); i++ ){
+            push(str.charAt(i));
+        }
+        String reversed=" ";
+        while(top!=-1){
+            reversed = reversed + pop(); 
+        }
+        return reversed;
+
+    }
     public void display(){
         if(top == -1){
             System.out.println("stack empty");
@@ -31,7 +43,7 @@ public class reverseString {
         }
     }
     public static void main(String[] args) {
-        reverseString list = new reverseString();
+        ReverseStringUA list = new ReverseStringUA();
         list.push('f');
         list.push('a');
         list.push('t');
@@ -39,7 +51,7 @@ public class reverseString {
         list.push('m');
         list.push('a');
         list.display();
-        list.pop();
+        list.Reverse("fatima");
 
     }
 }
