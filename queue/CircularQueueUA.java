@@ -55,7 +55,7 @@ public class CircularQueueUA{
         }
         System.out.println("front element:" + arr[front]);
     }
-    public void display(){
+    public void display() {
         if (isEmpty()) {
             System.out.println("Queue is empty");
             return;
@@ -63,18 +63,12 @@ public class CircularQueueUA{
 
         int i = front;
 
-        while (true) {
+        while (i != rear) {
             System.out.print(arr[i] + " ");
-
-            if (i == rear) {
-                break;
-            }
-
             i = (i + 1) % size;
         }
 
-        System.out.println();
-    
+        System.out.println(arr[rear] + " ");
     }
     public static void main(String[] args){
         CircularQueueUA q = new CircularQueueUA(5);
