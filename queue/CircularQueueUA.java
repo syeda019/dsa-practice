@@ -55,6 +55,7 @@ public class CircularQueueUA{
         }
         System.out.println("front element:" + arr[front]);
     }
+    
     public void display() {
         if (isEmpty()) {
             System.out.println("Queue is empty");
@@ -80,7 +81,7 @@ public class CircularQueueUA{
         q.display();
         q.peek();
 
-        q.Dequeue();
+        
         q.Dequeue();
         q.display();
 

@@ -1,4 +1,5 @@
 package stack;
+
 public class popUL{
     class Node{
         int data;
@@ -48,10 +49,16 @@ public class popUL{
         p.push(2);
         p.push(3);
         p.push(4);
-        while(p.head!=null){
-            System.out.println(p.peek());
-            p.pop();
+        System.out.println("Stack before pop:");
+        p.display();
+
+    // Sirf 2 elements pop
+        for(int i = 0; i < 2; i++){
+           System.out.println("Popped: " + p.pop());
         }
+
+        System.out.println("Stack after pop:");
+        p.display();
       
     }
 }

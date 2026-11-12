@@ -26,11 +26,11 @@ public class StackUSEingArray{
         System.out.println("TOP element:" + " " + stack[top]);
     }
     public void isfull(){
-        if(top==-1){
-            System.out.println("stack is empty");
+        if(top==stack.length-1){
+            System.out.println("stack is full");
         }
         else{
-            System.out.println("Stack is not empty");
+            System.out.println("Stack is not full");
         }
     }
     public void display(){

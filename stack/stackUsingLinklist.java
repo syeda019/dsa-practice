@@ -57,6 +57,7 @@ package stack;
         list.push(40);
         list.display();
         list.pop();
+
         list.peek();
     }
 }

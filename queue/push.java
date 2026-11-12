@@ -1,4 +1,4 @@
-package stack;
+package queue;
 public class push{
     int[] stack = new int[5];
     int top = -1;
@@ -12,8 +12,9 @@ public class push{
 
         top++;
         stack[top] = value;
-        System.out.println(value + " pushed");
+        System.out.println(value + " ");
     }
+    
     public void display(){
         if (top == -1) {
             System.out.println("Stack is empty");
@@ -28,6 +29,7 @@ public class push{
     }
     public static void  main(String[] args){
         push p = new push();
+        
         p.Push(10);
         p.Push(20);
         p.Push(30);

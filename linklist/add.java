@@ -1,6 +1,4 @@
 package linklist;
-
-
 public class add{
     class Node {
         int data;
